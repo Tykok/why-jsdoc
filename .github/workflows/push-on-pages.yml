@@ -10,6 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Push
     steps:
+
+      - name: Install all dependencies
+        run: npm i
+
+      - name: Build
+        run: npm run build
+        
       - name: git-checkout
         uses: actions/checkout@v2
     
