@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css">
 		<link rel="stylesheet" href="own.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -37,11 +38,11 @@
 					<section>
 						<h2>What's JSDoc</h2>
 						
-						<a href="https://en.wikipedia.org/wiki/JSDoc">JSDoc</a> is a documentation tool for JavaScript. It is a simple way to document your code.
-						<br/>
-						It was <b>created in 1999</b> and is <b>open source</b>, it is also inspired by JavaDoc.
-						<br/>
-						<img src="https://media0.giphy.com/media/8MBYvsjFsmNIagY1yK/giphy.gif?cid=ecf05e47n87qyu0azkq2v5yxqc6ixs2t04fw4cbvin57dtt1&rid=giphy.gif&ct=g">
+						<a href="https://en.wikipedia.org/wiki/JSDoc">JSDoc</a> is a documentation free tool for JavaScript (<i>created in 1999</i>), it's a <b>markup language</b> to annote many 
+						things in your JavaScript source code. 
+						It is a <b>simple way</b> to document your code.
+						<br/><br/>
+						You can simply use it to describing the program you wrote and it's also used by some librarys to generate documentation in other format like HTML for example.
 					</section>
 					<section>
 						Today, JSDoc is also implemented into many IDE.
@@ -53,51 +54,66 @@
 						<img width="100" height="100"src="https://imgs.search.brave.com/R9XIo5lov5efl9K6Wl25zZiAfyS1g9JddKHGxSZGBHU/rs:fit:1024:1024:1/g:ce/aHR0cHM6Ly9sb2dv/bm9pZC5jb20vaW1h/Z2VzL3dlYnN0b3Jt/LWxvZ28ucG5n"/>
 						<br/>
 						And each other...
+
+						<br/> <br/>
+
+						If JSDoc was implemented in many IDE, it's for a really good reason and i'll show you why after.
 					</section>
 				</section>
 				<section>
 					<section>
 						<h3>Disadvantages</h3>
-
-						<ul>
-							<li>It take time to write it... 😅</li>
-							<li>Takes up a lot of space in the file😭</li>
-							<li>It's useless, the comments don't change my code👎</li>
-						</ul>
-
-						<img src="https://media2.giphy.com/media/vyTnNTrs3wqQ0UIvwE/giphy.gif?cid=ecf05e4786l30n4bs7mf9oebcvpxj0am1i02yp8qf8z205kl&rid=giphy.gif&ct=g"/>
+						<div class="row">
+							<div class="col-12">
+								
+									It take <i>time to write it</i>... (Don't make me laugh, it take just <b>2 minutes</b>)<br/><br/>
+									Takes up a <i>lot of space in the file</i> and make the file unreadable for some peoples (ok I understand)<br/><br/>
+									It's <i>useless</i>, the comments don't change my code and it's <i>optional</i> (<b>nop</b>, and I'll show you why)<br/><br/>
+									<img src="https://media2.giphy.com/media/vyTnNTrs3wqQ0UIvwE/giphy.gif?cid=ecf05e4786l30n4bs7mf9oebcvpxj0am1i02yp8qf8z205kl&rid=giphy.gif&ct=g" width=100/>
+							</div>
+						</div>
 					</section>
 					<section>
 						<h3>Advantages</h3>
 
-						<ul>
-							<li>Specify the type of your variables. (Very important for a language that is not typed 😁)</li>
-							<li>Avoids back and forth between different functions👏</li>
-							<li>Makes reading faster (no need to understand the code) 📜</li>
-							<li>Simply part of good practice in development in general 👈</li>
-						</ul>
-						<img src="https://media2.giphy.com/media/odegvNEsYf0Ig/giphy.gif?cid=ecf05e470znu3jbm2n9d1wm9ppnnnibs9icck2enwuokn7n5&rid=giphy.gif&ct=g"/>
+						<div class="row">
+							<div class="col-12">
+
+									<b>Specifies many important information</b> like the type of a variable for example.<br/><br/>
+									Makes reading faster for <b>YOU</b>, for <b>OTHERS PEOPLES</b>, and... for your <b>IDE</b> (yes you're IDE use JSDoc to make autocompletion)<br/><br/>		
+									It's really simply a good practice to document your code 👏<br/><br/>
+									<img src="https://media2.giphy.com/media/odegvNEsYf0Ig/giphy.gif?cid=ecf05e470znu3jbm2n9d1wm9ppnnnibs9icck2enwuokn7n5&rid=giphy.gif&ct=g" width=100/>
+
+							</div>
+					</section>
+					<section>
+						This is not only my conclusion, it is the conclusion of many developers and now I will show you all the evidence that JSDoc: is not optional when you write your code with / for people.
+						<img src="https://media2.giphy.com/media/tKjxM885gG4RCw80ok/giphy.gif?cid=ecf05e472l7mg0ebqjn27x91qbwxu1equo6qg4wdxphyc1fb&rid=giphy.gif&ct=g"/>
 					</section>
 				</section>
 				<section>
 					<section>
 						<h2>Justification</h2>
-						<br/>
-						<img src="https://media2.giphy.com/media/tKjxM885gG4RCw80ok/giphy.gif?cid=ecf05e472l7mg0ebqjn27x91qbwxu1equo6qg4wdxphyc1fb&rid=giphy.gif&ct=g"/>
 					</section>
 					<section>
 						Everyone <b>reads from top to bottom</b>, so everyone will see the commentary before the code and it wanna <b>help him to understand the code</b>.
 						<br/>
+						<br/>
+						<small>Yeah this conclusion is real I promise!</small>
+						<br/>
+						<br/>
+						And if you come after a long time in your code, you will understand faster what you write before.
 						<img src="https://media4.giphy.com/media/26gss3a1MJ606TQY0/giphy.gif?cid=790b76119c271596b0ea8d4970040292cb201700c3c6b9cd&rid=giphy.gif&ct=g"/>
 					</section>
 					<section>
-						<b>Microsoft</b> have a specific documentation about "<i><a href="https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/bx185bk6(v=vs.100)?redirectedfrom=MSDN">
-							How to comments in code</a></i>" and say it was a <b>good practices</b> to comments code.
-						<br/>
-						<img src="https://media2.giphy.com/media/Hk04hIz9UENuo/giphy.gif?cid=ecf05e475fhj4m5fx5sgvzgkqsf5wz9536vwufabzbl4fce4&rid=giphy.gif&ct=g"/>
+						It make JavaScript <b>clean</b> and <b>modern</b>. Because with JSDoc, many people gonna understand your code easily.
+						<br/><br/>
+						AND, your IDE gonna use it to make <b>autocompletion</b> (yeah it's really cool). It also use it to make <b>verification</b> on the type of variable for example and display some <b>warnings</b>.
+						<br/><br/>
+						<small>Check <a href="https://code.visualstudio.com/docs/languages/javascript#_jsdoc-support">here</a> for VSCode (official documentation) with IntelliSense if you want an example example.</small>
 					</section>
 					<section>
-						<b>TypeScript</b> library document here code with JSDoc...
+						<b>TypeScript</b> library document here code with JSDoc... And here is an example of the <code>Number</code> interface.
 						<br/>
 						<pre>
 							<code>
@@ -111,17 +127,35 @@
 								}
 							</code>
 						</pre>
-						<small>An many of open source use it. (<a href="https://github.com/sequelize/sequelize/blob/main/src/sequelize.js">Sequelize</a> for example)</small>
+						<small>Imagine, a typed langage use JSDoc. And now imagine if your JavaScript program was not typed don't use JSDoc.</small>
+					</section>
+					<section>
+						<a href="https://google.github.io/styleguide/jsguide.html">Google JavaScript Style Guide</a> implements <a href="https://google.github.io/styleguide/jsguide.html#jsdoc">JSDoc</a> and it's not alone.
 						<br/>
-						<img width="200" height="150"src="https://media0.giphy.com/media/xThtappQfQohgzJMdi/giphy.gif?cid=ecf05e47a75rqpgdr7eyn1xeu5wm1tmzu5nzqzn7mhi0xfj6&rid=giphy.gif&ct=g"/>
+						<img src="https://wallpapercave.com/wp/wp2860517.jpg"/ width=200>
+						<br/>
+						<small>
+							I also recommend that you use a popular <b>Linter</b> for your code and implement it in your IDE. 
+							It will show you lots of errors and warnings and <b>improve the style of your JavaScript by making it cleaner</b>.
+						</small>
 					</section>
 				</section>
 				<section>
-					So now please... Use JSDoc <b>for you</b> in few months and <b>for the next people</b> who's come in your code.
-					<br/><br/>
-					They will be grateful to you.
-					<br/>
-					<img width="300" height="300"src="https://media2.giphy.com/media/NEvPzZ8bd1V4Y/giphy.gif?cid=790b761144ac9a9f304f97e51edcebe5093b95d5a5b24a2e&rid=giphy.gif&ct=g"/>
+					<section>
+						JSDoc is really simple, it used tags like <code>@param</code>, <code>@throws</code> or <code>@return</code> to describe your code.
+						<br/>
+						It also describe your files, your <b>methods</b>, your <b>class</b>, your <b>errors</b>, and <b>many other things</b>.
+						<br/> <br/>
+						Check the official documentation here : <a href="https://jsdoc.app/">https://jsdoc.app/</a> (it will take more than 30 minutes really).
+					</section>
+					<section>
+						So now please... Use JSDoc <b>for you</b> in few months and <b>for the next people</b> who's come in your code.
+						<br/><br/>
+						They will be grateful to you.
+						<br/>
+						<code>@return {GoodBye} Thank you</code>
+						<img width="300" height="300"src="https://media2.giphy.com/media/NEvPzZ8bd1V4Y/giphy.gif?cid=790b761144ac9a9f304f97e51edcebe5093b95d5a5b24a2e&rid=giphy.gif&ct=g"/>
+					</section>
 				</section>
 			</div>
 		</div>
